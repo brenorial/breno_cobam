@@ -27,6 +27,7 @@ body {
   transition: width 0.3s ease;
   overflow: hidden;
   position: relative;
+  z-index: 9999;
 }
 
 #sidebar:hover {
@@ -44,7 +45,7 @@ body {
 }
 
 .sidebar-item:hover {
-  background-color: #0a4d9e;
+  background-color: #fff2374d;
 }
 
 .sidebar-icon {
@@ -72,16 +73,28 @@ body {
 
 #navbar {
   background-color: white;
-  padding: 20px 40px;
+  padding: 6px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ddd;
 }
 
+.logo-img {
+  height: 70px;
+  margin-right: 10px;
+}
+
 .logo-title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column; /* Empilha o h1 e o span */
 }
 
 .logo-title h1 {
@@ -92,6 +105,7 @@ body {
 .logo-title span {
   font-size: 12px;
   color: #aaa;
+  margin: 0;
 }
 
 .user-info {
