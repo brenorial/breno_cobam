@@ -1,34 +1,39 @@
-# **Explicação da Lógica do Sistema de Processos**
+# 📌 **Explicação da Lógica do sistema de Gestão Escolar**
 
-Este sistema foi desenvolvido para facilitar o gerenciamento de **processos jurídicos ou administrativos**, surgindo de uma demanda real da empresa onde trabalho. Nesse sistema é possível cadastrar, consultar, atualizar e remover processos.
+Este sistema foi desenvolvido para facilitar o gerenciamento de uma **unidade escolar**. O primeiro módulo realizado nesse backend cadastra um novo aluno ao banco de dados, simulando uma pré-matrícula.Posteriormente, abrirá uma aba de finalização da matrícula e envio para a respectiva turma.
 
-## **Objetivo do Sistema**
+## 🌐 **Objetivo do Sistema**
 
-Fornecer uma maneira atual e eficiente de acompanhar processos, armazenando informações essenciais como:
+Fornecer uma maneira atual e eficiente de gerir uma unidade escolar:
 
-- Número do processo
-- Descrição
-- Datas importantes
-- Atualização de Processos
-
----
-
-## **Funcionalidades Principais**
-
-### 1. **Gerenciamento de Processos**
-
-- Cadastro de novos processos com número único
-- Inclusão de descrição, data de início e data de fim
-- Listagem de todos os processos cadastrados
-- Consulta por número do processo
-- Atualização de dados de um processo
-- Remoção de um processo existente
+- Nome do Aluno
+- Data de Nascimento
+- CPF (Aluno ou Responsável)
+- Nome do Responsável
 
 ---
 
-## Como Rodar o Sistema
+## 📚**Funcionalidades Principais**
 
-1. **Clone o repositório:**
+### **Gerenciamento de Processos**
+
+- Cadastro de novos alunos (pré-matrícula)
+
+- Exclusão de alunos por CPF
+
+- Documentação interativa com Swagger, Redoc e RapiDoc
+
+- Validação de dados com Pydantic
+
+- Estrutura modular (models, schemas, logger, etc.)
+
+- Suporte a CORS para integração com o frontend
+
+---
+
+## 🔗 Como Rodar o Sistema
+
+**Clone o repositório:**
 
 ```bash
 git clone https://github.com/seu_usuario/sistema-monitoria.git
