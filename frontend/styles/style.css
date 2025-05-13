@@ -175,11 +175,11 @@ td {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #f1f1f125;
   padding: 9px 20px;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #3f4447;
   border-top: 1px solid #ddd;
   z-index: 100;
 }
