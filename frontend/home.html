@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Sistema</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body,
+      html {
+        height: 100%;
+        background-color: #f5f8fc;
+      }
+
+      .login-page {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .left-side {
+        flex: 1.4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #f5f8fc;
+      }
+
+      .left-side img {
+        max-width: 100%;
+        max-height: 250px;
+      }
+
+      .right-side {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .login-box {
+        width: 100%;
+        max-width: 400px;
+        background-color: #ffffff;
+        border: 1px solid #e3e7ed;
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .login-box h2 {
+        margin-bottom: 20px;
+        color: #073b76;
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      .login-box input {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      .login-box input:focus {
+        border-color: #073b76;
+        outline: none;
+      }
+
+      .login-btn {
+        background-color: #073b76;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s ease;
+      }
+
+      .login-btn:hover {
+        background-color: #052e5e;
+      }
+
+      .login-footer {
+        margin-top: 15px;
+        font-size: 12px;
+        color: #aaa;
+        text-align: center;
+      }
+
+      .login-footer a {
+        color: #073b76;
+        text-decoration: none;
+      }
+
+      .login-footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .login-page {
+          flex-direction: column;
+        }
+        .left-side,
+        .right-side {
+          flex: none;
+          width: 100%;
+          padding: 20px;
+        }
+        .left-side {
+          order: 2;
+        }
+      }
+      .logo-container {
+        background-color: white;
+        padding: 90px 150px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 180px;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        max-height: 200px;
+      }
+
+      .logo-container img {
+        display: block;
+        max-width: 40%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="left-side">
+        <div class="logo-container">
+          <img src="assets/img/cobam.png" alt="Logo do Sistema" />
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="login-box">
+          <h2>Bem-vindo</h2>
+          <form>
+            <input type="text" placeholder="Usuário" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="submit" class="login-btn">Entrar</button>
+          </form>
+          <div class="login-footer">
+            Esqueceu a senha? <a href="#">Recuperar acesso</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
